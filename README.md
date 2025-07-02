@@ -7,10 +7,16 @@ Este script Python coleta cotações históricas das moedas **USD, EUR, JPY, CAD
 
 ## 🚀 Funcionalidades
 
+- Trás a cotação atual toda vez que é atualizado.
 - Coleta dos últimos **90 dias** de dados de câmbio.
-- Conversão de timestamps para data legível.
 - Limpeza e padronização dos dados em tabelas separadas.
 - Pronto para ser usado com **Power BI** via script Python.
+
+---
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/df9b4bf9-aca8-461d-ac31-bccb661ee194" width="1000px" />
+</div>
 
 ---
 
@@ -101,7 +107,7 @@ libra['Hora da negociação'] = pd.to_datetime(pd.to_numeric(libra['Hora da nego
 
 3. Clique em **OK** e aguarde o carregamento das tabelas.
 4. Selecione quais DataFrames importar (`dolar`, `euro`, `iene`, `canadense`, `libra`).
-
+- Nota: os valores vem no padrão americano, faça a alteração de decimal com localidade "inglês (Estados Unidos)".
 ---
 
 ## 📅 Estrutura das Tabelas
@@ -117,15 +123,6 @@ Cada moeda resultará em uma tabela com as colunas:
 | Compra                   | Cotação de compra                             |
 | Venda                    | Cotação de venda                              |
 | Hora da negociação       | Timestamp convertido para data/hora legível   |
-
----
-
-## 🔁 Dica Extra
-
-Você pode unir todas as moedas em uma única tabela no Power BI:
-
-- Adicione uma coluna com o nome da moeda em cada tabela (`"Moeda" = "USD"`, `"EUR"`, etc.)
-- Use a opção **"Anexar Consultas"** no Power Query
 
 ---
 
