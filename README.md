@@ -7,7 +7,7 @@ Este script Python coleta cotações históricas das moedas **USD, EUR, JPY, CAD
 
 ## 🚀 Funcionalidades
 
-- Trás a cotação atual toda vez que é atualizado.
+- Traz a cotação atual toda vez que é atualizado.
 - Coleta dos últimos **90 dias** de dados de câmbio.
 - Limpeza e padronização dos dados em tabelas separadas.
 - Pronto para ser usado com **Power BI** via script Python.
